@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="PT">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title> Endangered</title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="CSS/scrollup.css">
+        <link rel="stylesheet" href="CSS/header.css">
+        <link rel="stylesheet" href="CSS/animais.css">
+        <link rel="stylesheet" href="CSS/organizations.css">
+        <link rel="stylesheet" href="CSS/contacts.css">
+
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="JavaScript/orgs.js"></script>
+        <script>
+            $(function() {
+            $("#includeHeader").load("header.html");
+            $("#includeFooter").load("footer.html");
+            });
+        </script>
+    
+    </head>
+    <body>
+
+        <section class="header" id="header">
+        <div id="includeHeader"></div>
+        <div class="text">
+            <h1> Endangered </h1>
+            <p> Descobre as espécies que mais precisam de ajuda para não deixarem de existir. <br> E as organizações que maior impacto têm no reverter desta situação.</p>
+            <a href="#animals" class="more-button"> Visita-nos Para Saber Mais </a>
+        </div>
+
+        </section>
+
+    <!-- *************ANIMAIS EM VIAS DE EXTINÇÃO************* -->
+        <section class="animals" id="animals">
+            <h1> Animais em Vias de Extinção </h1>
+            <div class="row">
+                <div class="animals-col">
+                    <img src="imagens/animaisTerrestres/pandaV1.png" alt="coala">
+                    <div class="animal-types">
+                        <h3> <a href="animais_terrestres.html">ANIMAIS TERRESTRES</a></h3>
+                    </div>
+                </div>
+                <div class="animals-col">
+                    <img src="imagens/animaisAereos/soldadinho_arararipe.jpg" alt="ave - soldadinho araripe">
+                    <div class="animal-types">
+                        <h3> <a href="animais_aereos.html">ANIMAIS AÉREOS</a></h3>
+                    </div>
+                </div>
+                <div class="animals-col">
+                    <img src="imagens/animaisAquaticos/pinguim-africano.jpg" alt="pinguim africano">
+                    <div class="animal-types">
+                        <h3> <a href="animais_aquaticos.html">ANIMAIS AQUÁTICOS</a></h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    <!-- *************ORGANIZAÇÕES************* -->
+
+    <section class="organizations">
+        <h1> Organizações Importantes</h1>
+        <p> Devido ao elevado número de espécies em vias de extinção sentiu-se necessidade de criar organizações com o objetivo de combater e reverter esta situação. <br> Apresentamos algumas das mais importantes.</p>
+    
+        <div class="row">
+            <div class="organizations-col">
+                <a onclick="wwf()"><img src="imagens/Organizaçoes/logo-wwf.jpg" alt="logo wwf"></a>
+                <h3> World Wildlife Fund</h3>
+                <p> A principal organização de conservação de vida selvagem e espécies em vias de extinção.</p>
+            </div>
+            <div class="organizations-col">
+                <a onclick="dow()"><img src="imagens/Organizaçoes/logo-defenders-of-wildlife.png" alt="logo defedenders of wildlife"></a>
+                <h3> Defenders of Wildlife</h3>
+                <p> Esta organização trabalha no campo para proteger e restaurar os animais selvagens ameaçados.</p>
+            </div>
+            <div class="organizations-col">
+                <a onclick="pa()"><img src="imagens/Organizaçoes/logo-project-aware.png" alt="logo project aware"></a>
+                <h3> Project Aware </h3>
+                <p> Este projeto trabalha com mergulhadores de todo o mundo para proteger o mundo marinho.</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="JavaScript/ScrollUp.js"></script>
+        
+    <!-- *************CONTACTOS************* -->
+
+        <section class="contacts">
+            <h1>Ganha Consciência De Como Os Humanos Afetam A Vida Selvagem.</h1>
+            <a href="contactos.html" class="more-button"> CONTACTA-NOS </a>
+        </section>
+
+
+    <!-- *************FOOTER************* -->
+        <section class="footer">
+            <div id="includeFooter"></div> 
+        </section>
+
+
+    </body>
+</html>

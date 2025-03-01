@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="PT">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title> Endangered</title>
+        <link rel="stylesheet" href="CSS/header.css">
+        <link rel="stylesheet" href="CSS/scrollup.css">
+        <link rel="stylesheet" href="CSS/animais.css">
+        <link rel="stylesheet" href="CSS/comments.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+            $(function() {
+            $("#includeHeader").load("header.html");
+            $("#includeFooter").load("footer.html");
+            });
+        </script>
+        <script src="JavaScript/animals.js"></script>
+
+    </head>
+    <body>
+
+        <section class="header-water-animals">
+            <div id="includeHeader"></div>
+            <h1> Animais Aquáticos </h1>
+        
+
+        </section>
+
+    <!-- *************TUBARAO************* -->
+        <section class="animals-individual">
+            <div class="row row-animals-individual">
+                <div class="animals-individual-col animals-individual-img">
+                    <img src="imagens/animaisAquaticos/hammer.jpg" alt="Tubarão-martelo-panã">
+                    <h3>Tubarão-martelo-panã <br> (<i>Sphyrna mokarran</i>)</h3>
+                </div>
+                <div class="animals-individual-col animals-individual-text">
+                    <p>Este tubarão é o maior entre todos os tubarões-martelo, podendo medir até 6 metros e pesar até 450 quilos! Este tubarão, embora perigoso, raramente ataca humanos. Segundo a IUCN Red List of Endangered Species, esta espécie está em um estado crítico devido à extração de materiais do seu habitat e pela pesca da espécie, uma vez que a barbatana deste animal é o principal ingrediente da sopa de barbatanas de tubarão, um prato chinês.</p>
+                    <a onclick="tubarao()" class="more-button more-more-button"> Saber Mais </a>
+                </div>
+            </div>
+            <a href="animais_aquaticos.html" class="more-button land-animals-button"> Animais Aquáticos </a>
+        </section>
+
+    <!-- *************SABER MAIS************* -->
+        
+
+
+    <!-- *************COMMENT BOX************* -->
+        <section class="comments">
+            <div class="comment-box">
+                <h3>Deixe o seu comentário</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Introduza o seu nome:">
+                    <input type="email" placeholder="Introduza o seu email:">
+                    <textarea rows="5" placeholder="O seu comentário."></textarea>
+                    <button type="submit" class="more-button">PUBLICAR COMENTÁRIO</button>
+                </form>
+            </div> 
+        </section>
+        
+        <script src="JavaScript/ScrollUp.js"></script>
+
+    <!-- *************FOOTER************* -->
+        <section class="footer">
+            <div id="includeFooter"></div> 
+        </section>
+
+
+    </body>
+</html>

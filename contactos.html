@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="PT">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Endangered</title>
+        <link rel="stylesheet" href="CSS/header.css">
+        <link rel="stylesheet" href="CSS/scrollup.css">
+        <link rel="stylesheet" href="CSS/animais.css">
+        <link rel="stylesheet" href="CSS/contacts.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script src="JavaScript/formValid.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+            $(function() {
+            $("#includeHeader").load("header.html");
+            $("#includeFooter").load("footer.html");
+            });
+        </script>
+
+    </head>
+    <body>
+
+        <section class="header-contact">
+            <div id="includeHeader"></div>
+            <h1> Contacta-nos</h1>
+    
+        </section>
+
+    <!-- *************CONTACTS************* -->
+
+        <div class="location">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3121.5273831529403!2d-8.8396314!3d38.5216096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1937b2c60f8f47%3A0xa0df10aa0caa2efa!2sPolytechnic%20Institute%20of%20Set%C3%BAbal!5e0!3m2!1sen!2spt!4v1704326566073!5m2!1sen!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            
+        </div>
+
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div class="options">
+                        <img src="imagens/icons/house.png" alt="icon da casa">
+                        <div>
+                            <h5> Campus do IPS - Estefanilha, 2910-761 Setúbal </h5>
+                            <p> Setúbal, Portugal</p>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <img src="imagens/icons/telephone.png" alt="icon do telefone">
+                        <div>
+                            <h5> +351 931 123 123 </h5>
+                            <p> Segunda a Sexta, 09h-13h</p>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <img src="imagens/icons/email.png" alt="icon do email">
+                        <div>
+                            <h5> Endangered@gmail.com </h5>
+                            <p> Envia-nos um email com as tuas questões</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form id="contacto" onsubmit="return validateSupport()">
+                        <input type="text" placeholder="Introduz o teu nome" id="nome">
+                        <input type="text" placeholder="Introduz o endereço do email" id="email">
+                        <input type="text" placeholder="Introduz o assunto" id="assunto">
+                        <textarea  rows="8" placeholder="Mensagem" id="message"></textarea>
+                        <button type="submit" class="more-button">Enviar Mensagem</button>
+                    </form>
+                </div> 
+            </div>
+
+        </section>
+    
+
+    
+        <script src="JavaScript/ScrollUp.js"></script>
+    
+
+    <!-- *************FOOTER************* -->
+        <section class="footer">
+            <div id="includeFooter"></div> 
+        </section>
+
+
+    </body>
+</html>

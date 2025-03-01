@@ -1,0 +1,211 @@
+.header-animals{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/imagens/animais2.jpg);
+    background-color: rgb(182, 209, 182);
+    background-size: cover;
+    text-align: center;
+}
+.header-animals h1{
+    color: white;
+    margin-top:120px;
+}
+.animals{
+    width:60%;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0 100px;
+    
+}
+h1{
+    font-size:36px;
+    font-weight: 600;
+    color:#222E50;
+    padding-bottom: 15px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.animals-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin:10px;
+    position: relative;
+    overflow: hidden;
+}
+.animals-col img{
+    width: 100%;
+    display: block;
+}
+.animal-types{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.animal-types:hover{
+    background: rgb(182, 209, 182, 0.7);
+    cursor: pointer;
+}
+.animal-types h3{
+    width: 100%;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%); /* Move a caixa horizontalmente para a esquerda 50%*/
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.animal-types h3 a{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+}
+.animal-types:hover h3{
+    bottom: 50%;
+    opacity:1;
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+/******** Página "Animais Terrestres" **************/
+.header-land-animals{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/imagens/savana.jpg);
+    background-color: rgb(182, 209, 182);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+}
+.header-land-animals h1{
+    color: white;
+    margin-top:120px;
+}
+.land-animals{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0 100px;
+}
+.land-animals-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin:10px;
+    position: relative;
+    overflow: hidden;
+}
+.land-animals-col img{
+    width: 100%;
+    display: block;
+}
+.land-animals h3{
+    width: 100%;
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+    position: relative;
+    margin-top:10px;
+}
+
+
+/************Página Animais Aéreos*****************/
+.header-air-animals{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/imagens/animais.jpg);
+    background-color: rgb(182, 209, 182);
+    background-size: cover;
+    text-align: center;
+
+}
+.header-air-animals h1{
+    color: white;
+    margin-top:120px;
+}
+/************Página Animais Aquáticos*****************/
+.header-water-animals{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/imagens/water.jpg);
+    background-color: rgb(182, 209, 182);
+    background-size: cover;
+    text-align: center;
+
+}
+.header-water-animals h1{
+    color: white;
+    margin-top:120px;
+}
+/********* Página dos Animais Individuais *********/
+.row-animals-individual{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(/imagens/rainforest.jpg);
+    margin-top: 5%;
+    position: relative;
+    border: 1px solid #662c18;
+}
+.animals-individual-col{
+    padding:5%;
+    text-align: center;
+}
+.animals-individual-col img{
+    border-radius: 200px;
+    height:30vh;
+    width:30vh;
+}
+.animals-individual-col h3{
+    color: white;
+}
+.animals-individual-text{
+    text-align: left;
+}
+.animals-individual-text p{
+    background-color: rgb(255, 255, 255, 0.7);
+    margin:5%;
+    padding:10%;
+    border-radius: 10px;
+    width:70%;
+    height:auto;
+}
+.more-more-button{
+    padding:10px;
+    color: #662c18;
+    border: 1px solid #662c18;
+    float:right;
+}
+.more-more-button:hover{
+    border: 1px solid #662c18;
+    color:white;
+    background-color: #662c18;
+}
+.land-animals-button{
+    display: block;
+    margin-top: 5%;
+    color:#662c18;
+    border: 1px solid #662c18;
+
+}
+.land-animals-button:hover{
+    border: 1px solid #662c18;
+    color:#fff;
+    background-color: #662c18;
+}
+@media(max-width: 1000px){
+    .row-animals-individual{
+        flex-direction: column;
+    } 
+}

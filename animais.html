@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="PT">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title> Endangered</title>
+        <link rel="stylesheet" href="CSS/header.css">
+        <link rel="stylesheet" href="CSS/scrollup.css">
+        <link rel="stylesheet" href="CSS/animais.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+            $(function() {
+            $("#includeHeader").load("header.html");
+            $("#includeFooter").load("footer.html");
+            });
+        </script>
+
+    </head>
+    <body>
+
+        <section class="header-animals">
+            <div id="includeHeader"></div>
+            <h1> Animais</h1>
+        
+
+        </section>
+    
+    <!-- *************Animais*************-->
+    
+        <section class="animals" id="animals">
+            <h1> Animais em Vias de Extinção </h1>
+            <div class="row">
+                <div class="animals-col">
+                    <img src="imagens/animaisTerrestres/pandaV1.png" alt="coala">
+                    <div class="animal-types">
+                        <h3> <a href="animais_terrestres.html">ANIMAIS TERRESTRES</a></h3>
+                    </div>
+                </div>
+                <div class="animals-col">
+                    <img src="imagens/animaisAereos/soldadinho_arararipe.jpg" alt="ave - soldadinho araripe">
+                    <div class="animal-types">
+                        <h3> <a href="animais_aereos.html">ANIMAIS AÉREOS</a></h3>
+                    </div>
+                </div>
+                <div class="animals-col">
+                    <img src="imagens/animaisAquaticos/pinguim-africano.jpg" alt="pinguim africano">
+                    <div class="animal-types">
+                        <h3> <a href="animais_aquaticos.html">ANIMAIS AQUÁTICOS</a></h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <script src="JavaScript/ScrollUp.js"></script>
+
+    <!-- *************FOOTER************* -->
+        <section class="footer">
+            <div id="includeFooter"></div> 
+        </section>
+
+
+
+    </body>
+</html>

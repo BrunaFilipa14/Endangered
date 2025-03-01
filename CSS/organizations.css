@@ -1,0 +1,49 @@
+/************* Organizações *************/
+.header-organizations{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/imagens/organizacoes.jpg);
+    background-color: rgb(182, 209, 182);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.header-organizations h1{
+    color: white;
+    margin-top:120px;
+}
+.organizations{
+    width:80%;
+    padding: 10%;
+    text-align: center;
+    padding-top: 100px;
+    background-color: antiquewhite;
+
+}
+.organizations-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.organizations-col img{
+    width:100%;
+    cursor: pointer;
+    border-radius: 2%;
+}
+.organizations-col p{
+    padding: 0;
+}
+.organizations-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+@media(max-width: 700px){
+    .header-organizations h1{
+        font-size: 25px;
+    }
+    .organizations h1{
+        font-size: 25px;
+    }
+}

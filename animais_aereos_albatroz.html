@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="PT">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title> Endangered</title>
+        <link rel="stylesheet" href="CSS/scrollup.css">
+        <link rel="stylesheet" href="CSS/animais.css">
+        <link rel="stylesheet" href="CSS/comments.css">
+        <link rel="stylesheet" href="CSS/header.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+            $(function() {
+            $("#includeHeader").load("header.html");
+            $("#includeFooter").load("footer.html");
+            });
+        </script>        
+        <script src="JavaScript/animals.js"></script>
+        <script src="JavaScript/comments.js"></script>
+
+
+    </head>
+    <body>
+
+        <section class="header-air-animals">
+        <div id="includeHeader"></div>
+        <h1> Animais Aéreos </h1>
+        
+
+        </section>
+
+    <!-- *************ALBATROZ************* -->
+        <section class="animals-individual">
+            <div class="row row-animals-individual">
+                <div class="animals-individual-col animals-individual-img">
+                    <img src="imagens/animaisAereos/albatroz.jpg" alt="Albatroz-Gigante">
+                    <h3>Albatroz-Gigante<br> (<i>Diomedea exulans</i>)</h3>
+                </div>
+                <div class="animals-individual-col animals-individual-text">
+                    <p>Esta espécie reside entre o gelo em volta da antártica até ao trópico de capricórnio. A albatroz-gigante é a maior espécie da familia Diomedea, empatada com a Albatroz-das-Antípodas. Tanto a Albatroz-das-Antípodas quanto a Albatroz-Gigante são categorizadas com o mesmo nível de perigo de extinção segundo o ICUN Red List Of Endangered Species, este sendo o nível "Vulnerável". Os motivos da Albatroz-Gigante estar vulnerável a ser extinta são a poluição, a alteração do clima e espécies invasoras.</p>
+                    <a onclick="albatroz()" class="more-button more-more-button"> Saber Mais </a>
+                </div>
+            </div>
+            <a href="animais_aereos.html" class="more-button land-animals-button"> Animais Aéreos </a>
+
+        </section>
+
+    <!--*************SABER MAIS*************-->
+        
+
+
+    <!--*************COMMENT BOX*************-->
+        <section class="comments">
+            <div id="allComments">
+            <div class="comment-list">
+                <div class="comments-profile">
+                    <img src="imagens/icons/anonymous.png" alt="profile picture">
+                    <h3 id="new-name"> Anónimo </h3>
+                </div>
+                <div class="comment">
+                    <p id="new-comment"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, repellendus ad est sit dignissimos quia recusandae consectetur non tempore, tempora ipsa repellat ut cumque numquam accusamus vel, voluptatibus eveniet maxime.</p>
+                </div>
+            </div> 
+            </div>
+
+
+            <div class="comment-box">
+                <h3>Deixe o seu comentário</h3>
+                <form class="comment-form" onsubmit="validateComment()">
+                    <input type="text" id="nome" placeholder="Introduza o seu nome:">
+                    <input type="text" id="email" placeholder="Introduza o seu email:"> 
+                    <textarea rows="5" id="comment" placeholder="O seu comentário."></textarea>
+                    <button type="submit" class="more-button" id="newComment">PUBLICAR COMENTÁRIO</button>
+                </form>
+            </div>
+
+        </section>
+        
+        <script src="JavaScript/ScrollUp.js"></script>
+        
+    <!-- *************FOOTER*************-->
+        <section class="footer">
+            <div id="includeFooter"></div> 
+        </section>
+
+    </body>
+</html>

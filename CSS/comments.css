@@ -1,0 +1,59 @@
+/**********Caixa de comentários*************/
+.comments{
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-box{
+    border: 1px solid #ccc;
+    margin: 50px 100px;
+    padding: 10px 20px;
+    
+}
+.comment-box h3{
+    text-align: left;
+}
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+.comment-form button{
+    margin: 10px 0;
+}
+/****Inserir Comentario *******/
+.comment-list{
+    margin: 80px 100px 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    border: solid 1px black;
+}
+.comment{
+    display: flex;
+    margin: 40px 10px;
+}
+.comments-profile{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    
+}
+.comments-profile img{
+    width: 50px;
+    height: 50px;
+}
+#new-name{
+    padding: 15px;
+}
+.comments #new-comment{
+    margin: 10px 10px 10px;
+    background-color: #f0f0f0;
+    padding: 30px;
+    margin: 0;
+}

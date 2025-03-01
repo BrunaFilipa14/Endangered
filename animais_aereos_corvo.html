@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="PT">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title> Endangered</title>
+        <link rel="stylesheet" href="CSS/header.css">
+        <link rel="stylesheet" href="CSS/scrollup.css">
+        <link rel="stylesheet" href="CSS/animais.css">
+        <link rel="stylesheet" href="CSS/comments.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+            $(function() {
+            $("#includeHeader").load("header.html");
+            $("#includeFooter").load("footer.html");
+            });
+        </script>
+        <script src="JavaScript/animals.js"></script>
+
+    </head>
+    <body>
+
+        <section class="header-air-animals">
+            <div id="includeHeader"></div>
+            <h1> Animais Aéreos </h1>
+        
+
+        </section>
+
+    <!-- *************CORVO************* -->
+        <section class="animals-individual">
+            <div class="row row-animals-individual">
+                <div class="animals-individual-col animals-individual-img">
+                    <img src="imagens/animaisAereos/corvo.jpg" alt="Corvo-do-Havai">
+                    <h3>Corvo-do-Havai<br> (<i>Corvus hawaiiensis</i>)</h3>
+                </div>
+                <div class="animals-individual-col animals-individual-text">
+                    <p>Este corvo tem um nome próprio dado pelo povo do Havai, alala. Isto porque alguns dos havaianos consideram esta espécie um deus!
+                        Infelizmente, segundo o ICUN Red List of Endangered Species, esta espécie está extinta na natureza, existindo apenas em instalações de reprodução em cativeiro no Zoo de San Diego. Não se sabe de certeza o motivo da extinção deste animal, mas acredita-se que possa estar relacionada com predadores, malária aviária e intrusões humanas no seu habitat.</p>
+                    <a onclick="corvo()" class="more-button more-more-button"> Saber Mais </a>
+                </div>
+            </div>
+            <a href="animais_aereos.html" class="more-button land-animals-button"> Animais Aéreos </a>
+
+        </section>
+
+    <!-- *************SABER MAIS************* -->
+        
+
+
+    <!-- *************COMMENT BOX************* -->
+        <section class="comments">
+            <div class="comment-box">
+                <h3>Deixe o seu comentário</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Introduza o seu nome:">
+                    <input type="email" placeholder="Introduza o seu email:">
+                    <textarea rows="5" placeholder="O seu comentário."></textarea>
+                    <button type="submit" class="more-button">PUBLICAR COMENTÁRIO</button>
+                </form>
+            </div> 
+        </section>
+        
+        <script src="JavaScript/ScrollUp.js"></script>
+
+    <!-- *************FOOTER*************-->
+        <section class="footer">
+            <div id="includeFooter"></div> 
+        </section>
+
+    
+    </body>
+</html>
